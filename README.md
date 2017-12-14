@@ -2,4 +2,8 @@
 
 > 想跟着这个教程巩固一下js，将自己的体会写下来。
 
-1. [12.12 day1 : js drum kit](https://github.com/longmimi/javascript-30-practice/tree/master/01%20js%20drum%20kit)
+序号|地址
+:--:|:---
+1|[12.12 day1 : js drum kit](https://github.com/longmimi/javascript-30-practice/tree/master/01%20js%20drum%20kit)
+2|[12.13 day2: css & js clock](https://github.com/longmimi/javascript-30-practice/tree/master/02%20css%2Bjs%20clock)
+3|[12.14 day3:css variables & javascript](https://github.com/longmimi/javascript-30-practice/tree/master/03%20css%20variabale)
