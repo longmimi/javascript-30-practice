@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet"  href="./style.css">
+  <title>Ajax Type match</title>
+</head>
+<body>
+  <form class="search-form">
+      <input type="text" class="search" placeholder="诗句 诗名 诗人"/>
+      <ul class="myList">
+        <li>输入诗句，找一首诗</li>
+        <li></li>
+      </ul>
+  </form>
+
+  <script>
+    
+      const url = 'https://gist.githubusercontent.com/soyaine/81399bb2b24ca1bb5313e1985533c640/raw/bdf7df2cbcf70706c4a5e51a7dfb8c933ed78878/TangPoetry.json'
+      const arrList = []
+      fetch(url)
+        .then(data => data.json())
+        .then(pushList => arrList.push(...pushList))
+
+      function findMatches(matchWords, arrList) {
+        return arrList.filter(poet => {
+          // 正则找出匹配的诗句
+          const regex = new RegExp(matchWords, 'gi')
+          const author = poet.detail_author.join('')
+          console.log(author+'  author')
+          console.log(regex+'  regex')
+          return poet.detail_text.match(regex) || poet.title.match(regex) || author.match(regex)
+        })
+      }
+
+      function displayMatches() {
+        const matches = findMatches(this.value, arrList)
+        console.log(matches + '  matches')
+        const regex = new RegExp(this.value, 'gi')
+        console.log(regex + '  regex')
+        const html = matches.map( poet => {
+          // 替换高亮的标签
+          const text = poet.detail_text.replace(regex, `<span class="hl">${this.value}</span>`);
+          const title = poet.title.replace(regex, `<span class="hl">${this.value}</span>`)
+          // 构造 HTML 值
+          return `
+				<li>
+					<span class="poet">${ text}</span>
+					<span class="title">${ title} - ${poet.detail_author[0]}</span>
+				</li>
+			  `
+        }).join('')
+        console.log(html)
+        lists.innerHTML = html
+      }
+
+      const search = document.querySelector('.search')
+      const lists = document.querySelector('.myList')
+
+      search.addEventListener('change', displayMatches)
+      search.addEventListener('keyup', displayMatches)
+
+//	console.log(poetrys);
+  </script>
+</body>
+</html>
