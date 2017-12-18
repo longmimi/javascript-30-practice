@@ -10,3 +10,4 @@
 4|[12.15 day4 : array operate in console](https://github.com/longmimi/javascript-30-practice/tree/master/04%20array%20consolelog)
 5|[12.16 day5 : flex panel gallery](https://github.com/longmimi/javascript-30-practice/tree/master/05%20flex%20panel%20gallery)
 6|[12.17 day6 : RegExp match](https://github.com/longmimi/javascript-30-practice/tree/master/06%20type%20match)
+7|[12.18 day7 : array operate 2](https://github.com/longmimi/javascript-30-practice/tree/master/07%20array%20consolelog%202)
