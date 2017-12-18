@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>07 day arrry opreation</title>
+</head>
+<body>
+    <p>
+      <em>请按 F12 查看 Console 面板</em> </p>
+    <p>若无结果请刷新试试</p>
+    <script>
+       const people = [
+          { name: 'Wes', year: 1988 },
+          { name: 'Kait', year: 1986 },
+          { name: 'Irv', year: 1970 },
+          { name: 'Lux', year: 2015 }
+        ]
+
+        const comments = [
+          { text: 'Love this!', id: 523423 },
+          { text: 'Super good', id: 823423 },
+          { text: 'You are the best', id: 2039842 },
+          { text: 'Ramen is my fav food ever', id: 123523 },
+          { text: 'Nice Nice Nice!', id: 542328 }
+        ]
+
+        //some  是否有人超过19岁？
+        const isAdult = people.some( person => {
+          const age = new Date().getFullYear() - person.year
+          return (age - 19) >= 0
+        })
+        console.log({isAdult})
+
+        // every 是否所有人都超过19
+        const allAdult = people.every(person => new Date().getFullYear-person.year >= 19 )
+        console.log({allAdult})
+
+        //找到ID为823423的评论
+        const index = comments.find(item => item.id == 823423)
+        console.log(index)
+       //删除ID为 823423 的评论
+       const index2 = comments.findIndex(item => item.id == 823423)
+      //  comments.splice(index2,1)
+       console.table(comments)
+       //删除2 slice拼接
+       const newComments = [
+         ...comments.slice(0,index2),
+         ...comments.slice(index2+1)
+       ]
+       console.table(newComments)
+    </script>
+</body>
+</html>
