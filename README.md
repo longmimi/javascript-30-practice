@@ -12,3 +12,4 @@
 6|[12.17 day6 : RegExp match](https://github.com/longmimi/javascript-30-practice/tree/master/06%20type%20match)
 7|[12.18 day7 : array operate 2](https://github.com/longmimi/javascript-30-practice/tree/master/07%20array%20consolelog%202)
 8|[12.19 day8 : canvas drawing](https://github.com/longmimi/javascript-30-practice/tree/master/08%20canvas%20draw)
+9|[12.20 day9 : dev tools](https://github.com/longmimi/javascript-30-practice/tree/master/09%20dev%20tools%20domination)
