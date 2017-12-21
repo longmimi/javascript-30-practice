@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+ 
+  <!--
+   The following is a common layout you would see in an email client.
+
+   When a user clicks a checkbox, holds Shift, and then clicks another checkbox a few rows down, all the checkboxes inbetween those two checkboxes should be checked.
+
+  -->
+<div class="inbox">
+  <div class="item">
+    <input type="checkbox">
+    <p>这是一个邮件收件箱</p>
+  </div>
+  <div class="item">
+    <input type="checkbox">
+    <p>选中一项</p>
+  </div>
+  <div class="item">
+    <input type="checkbox">
+    <p>然后按住 Shift 键</p>
+  </div>
+  <div class="item">
+    <input type="checkbox">
+    <p>选择另外一项</p>
+  </div>
+  <div class="item">
+    <input type="checkbox">
+    <p>它们之间的都会被选中</p>
+  </div>
+  <div class="item">
+    <input type="checkbox">
+    <p>试着实现这个功能</p>
+  </div>
+  <div class="item">
+    <input type="checkbox">
+    <p>只用原生 JS </p>
+  </div>
+  <div class="item">
+    <input type="checkbox">
+    <p>Good Luck!</p>
+  </div>
+  <div class="item">
+    <input type="checkbox">
+    <p>记得展示你的成果♪(^∇^*)</p>
+  </div>
+</div>
+
+  <script>
+    const boxs = document.querySelectorAll('.inbox input[type="checkbox"]')
+    const boxArr = Array.from(boxs)
+    let lastChecked 
+    //法一
+    function handleCheck(e) {
+      if(!lastChecked) lastChecked = this
+      // console.log(this.checked)
+      onOff = lastChecked.checked ? true : false
+      if(e.shiftKey){ 
+        
+        let start = boxArr.indexOf(this)
+        // console.log(this+'  this')
+        let end = boxArr.indexOf(lastChecked)
+        boxArr.slice(Math.min(start,end),
+                     Math.max(start,end)+1)
+                     .forEach(item => item.checked = onOff)
+        }//slice(0,1)最后一回不会返回
+        lastChecked = this   
+    }
+
+    //法二
+    function handleCheck2(e) {
+      let inBetween = false
+      if(e.shiftKey && this.checked){
+        boxs.forEach(item => {
+          if(item === lastChecked || item === this){
+            inBetween = true
+          }
+          if(inBetween){
+            item.checked = true
+          }
+        })
+      }
+      lastChecked = this
+    }
+
+    boxs.forEach(item => {
+      item.addEventListener('click',handleCheck)
+    })
+
+  </script>
+</body>
+
+</html>
