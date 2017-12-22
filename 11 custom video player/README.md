@@ -1,4 +1,4 @@
-[原文]{https://github.com/soyaine/JavaScript30/issues/30}
+[原文](https://github.com/soyaine/JavaScript30/issues/30)
 ## 实现目标
 * 为 `video` 元素添加自定义样式的播放控制面板
     * 可滑动调节音量、播放速度

@@ -14,3 +14,4 @@
 8|[12.19 day8 : canvas drawing](https://github.com/longmimi/javascript-30-practice/tree/master/08%20canvas%20draw)
 9|[12.20 day9 : dev tools](https://github.com/longmimi/javascript-30-practice/tree/master/09%20dev%20tools%20domination)
 10|[12.21 day10 : hold shift and check checkbox](https://github.com/longmimi/javascript-30-practice/tree/master/10%20hold%20shift%20and%20check%20checkboxes)
+11|[12.22 day11 : custom video player](https://github.com/longmimi/javascript-30-practice/tree/master/11%20custom%20video%20player)
