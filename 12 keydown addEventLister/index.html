@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Key Detection</title>
+  <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+</head>
+
+<body>
+  <p>请直接在键盘输入longtean,会有惊喜</p>
+  <div class="textblock">您输入的是：<span></span></div>
+  <script>
+    const secretCode = 'longtean'
+    var pressedArr = []
+    const text = document.querySelector('.textblock span')
+    window.addEventListener('keydown',(e) => {        
+      console.log(pressedArr)
+      pressedArr.push(e.key)
+      console.log(e.key)
+      pressedArr.splice(-pressedArr.length,pressedArr.length-secretCode.length)
+      text.innerHTML = pressedArr.join(' ')
+      console.log(pressedArr)
+      if(pressedArr.join('').includes(secretCode)){
+        cornify_add()
+      }
+    })
+  </script>
+</body>
+
+</html>
