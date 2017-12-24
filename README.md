@@ -16,3 +16,4 @@
 10|[12.21 day10 : hold shift and check checkbox](https://github.com/longmimi/javascript-30-practice/tree/master/10%20hold%20shift%20and%20check%20checkboxes)
 11|[12.22 day11 : custom video player](https://github.com/longmimi/javascript-30-practice/tree/master/11%20custom%20video%20player)
 12|[12.23 day12 : key detection](https://github.com/longmimi/javascript-30-practice/tree/master/12%20keydown%20addEventLister)
+13|[12.24 day13 : slide in on scroll](https://github.com/longmimi/javascript-30-practice/tree/master/13%20slide%20in%20on%20scroll)
