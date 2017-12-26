@@ -18,3 +18,4 @@
 12|[12.23 day12 : key detection](https://github.com/longmimi/javascript-30-practice/tree/master/12%20keydown%20addEventLister)
 13|[12.24 day13 : slide in on scroll](https://github.com/longmimi/javascript-30-practice/tree/master/13%20slide%20in%20on%20scroll)
 14|[12.25 day14 : js reference & copy](https://github.com/longmimi/javascript-30-practice/tree/master/14%20js%20copy)
+15|[12.26 day15 :　localStorage](https://github.com/longmimi/javascript-30-practice/tree/master/15%20localstorage)

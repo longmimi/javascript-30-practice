@@ -1,7 +1,7 @@
 # 遇到的问题
 原作者是添加了一个删除全部的功能，我将这个改为了删除选中项目并删除，使用数组的forEach方法遍历数组判断是否勾选，并删除，但是发现并不能如我所愿，首先是用splice(index,1)来删除，发现每次只能删除所选元素的一半元素，一番查阅发现，forEach这个方法只是for的一个简化版，在每次循环过程中不能中断，因此这个index会改变，所以，我用了for循环逆向遍历，这样完美解决。还可以用filter()
 
-###　关键点
+### 关键点
 
 - Event
     - [event.preventDefault](https://developer.mozilla.org/zh-CN/docs/Web/API/Event/preventDefault)
