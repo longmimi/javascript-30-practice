@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="" href="./style.css">
+  <title>Sort Without Articles-es5</title>
+</head>
+
+<body>
+
+  <ul id="bands"></ul>
+
+  <script>
+   const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog']
+
+   const bandsUl = document.querySelector('#bands')
+   
+//    //去前缀函数
+//    function delPrefix(item){
+//       return item.replace(/^(The|A|An)\s{1}/,'')
+// }
+
+//   //展示HTML页面函数
+//   function displayArray (arr){
+//       bandsUl.innerHTML = '<li>' +arr.join('</li><li>')+'</li>'
+//   }
+
+//   bands.sort(function(a,b){
+//       return delPrefix(a) > delPrefix(b) ? 1 : -1
+//   })
+  
+
+//   displayArray(bands)
+
+    const delPrefix = (item) => {
+      item.replace(/^(The|A|An)\s{1}/, '')
+    }
+
+    const sortedBands = bands.sort((a,b) => delPrefix(a) > delPrefix(b) ? 1 : -1)
+
+    // bandsUl.innerHTML = '<li>' + sortedBands.join('</li><li>') + '</li>'
+    bandsUl.innerHTML =  `<li> ${sortedBands.join('</li><li>')} </li>`
+
+
+</script>
+
+</body>
+
+</html>
