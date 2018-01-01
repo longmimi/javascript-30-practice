@@ -24,3 +24,4 @@
 18|[12.29 day18 : add time](https://github.com/longmimi/javascript-30-practice/tree/master/18%20add%20time)
 19|[12.30 day19 : webcam](https://github.com/longmimi/javascript-30-practice/tree/master/19%20webCam%20Fun)
 20|[12.31 day20 : speech detection](https://github.com/longmimi/javascript-30-practice/tree/master/20%20speech%20detection)
+21|[1.1 day21 : geolocation](https://github.com/longmimi/javascript-30-practice/tree/master/21%20geolocation)
