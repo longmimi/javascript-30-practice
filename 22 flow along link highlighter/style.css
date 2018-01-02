@@ -1,0 +1,60 @@
+html{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*,*:before,*:after{
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+body{
+  min-height:100vh;
+  margin:0;
+  font-family: sans-serif;
+  background:
+    linear-gradient(45deg, hsla(340, 100%, 55%, 1) 0%, hsla(340, 100%, 55%, 0) 70%),
+    linear-gradient(135deg, hsla(225, 95%, 50%, 1) 10%, hsla(225, 95%, 50%, 0) 80%),
+    linear-gradient(225deg, hsla(140, 90%, 50%, 1) 10%, hsla(140, 90%, 50%, 0) 80%),
+    linear-gradient(315deg, hsla(35, 95%, 55%, 1) 100%, hsla(35, 95%, 55%, 0) 70%);
+}
+.wrapper{
+   margin:0 auto;
+   max-width:500px;
+   font-size:20px;
+   line-height: 2;
+}
+.wrapper p a{
+  text-decoration: none;
+  background: #000;
+  border-radius: 20px;
+}
+.menu{
+  list-style: none;
+  max-width: 900px;
+  font-size: 20px;
+  margin:100px auto;
+  
+}
+.menu a{
+  text-decoration: none;
+  color:black;
+  background:rgba(0,0,0,0.05);
+  border-radius: 20px;
+  padding:5px;
+  margin:0 20px;
+}
+.menu li{
+    display: inline-block;
+}
+
+/*有高亮class的样式*/
+.highlight{
+  -webkit-transition:all 0.1s;
+  transition:all 0.1s;
+  background: #fff;
+  border-radius: 20px;
+  z-index: -1;
+  position: absolute;
+  top:0;
+  left:0;
+  display: block;
+}
