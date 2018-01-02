@@ -25,3 +25,4 @@
 19|[12.30 day19 : webcam](https://github.com/longmimi/javascript-30-practice/tree/master/19%20webCam%20Fun)
 20|[12.31 day20 : speech detection](https://github.com/longmimi/javascript-30-practice/tree/master/20%20speech%20detection)
 21|[1.1 day21 : geolocation](https://github.com/longmimi/javascript-30-practice/tree/master/21%20geolocation)
+22|[1.2 day22: flow link highlighter](https://github.com/longmimi/javascript-30-practice/blob/master/22%20flow%20along%20link%20highlighter/README.md)
