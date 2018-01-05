@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <title>DOM事件</title>
+</head>
+<body>
+  <div class="one">
+    <div class="two">
+      <div class="three">
+      </div>
+    </div>
+  </div>
+  <script>
+    var divs = document.querySelectorAll('div')
+    var one = document.querySelector('.one')
+    var two = document.querySelector('.two')
+    var three = document.querySelector('.three')
+
+    one.addEventListener('click',logText1,{
+      capture:false
+    })
+    two.addEventListener('click', logText2, {
+      capture: false
+    })
+    three.addEventListener('click', logText3, {
+      capture: false
+    })
+    function logText1(e){
+      console.log(this.classList.value)
+      e.stopPropagation()
+    }
+    function logText1(e) {
+      console.log(this.classList.value)
+    }
+    function logText2(e) {
+      console.log(this.classList.value)
+    }
+    function logText3(e) {
+      console.log(this.classList.value)
+    }
+  </script>
+</body>
+</html>
