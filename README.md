@@ -29,3 +29,4 @@
 23|[1.3 day23 : speech synthesis](https://github.com/longmimi/javascript-30-practice/tree/master/23%20speech%20synthesis)
 24|[1.4 day24 : sticky nav](https://github.com/longmimi/javascript-30-practice/tree/master/24%20sticky%20nav)
 25|[1.5 day25 : event related](https://github.com/longmimi/javascript-30-practice/tree/master/25%20event%20related)
+26|[1.6 day26 : strip follow along nav](https://github.com/longmimi/javascript-30-practice/tree/master/26%20strip%20follow%20along%20nav)
