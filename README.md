@@ -32,3 +32,4 @@
 26|[1.6 day26 : strip follow along nav](https://github.com/longmimi/javascript-30-practice/tree/master/26%20strip%20follow%20along%20nav)
 27|[1.7 day27 : click &　drag](https://github.com/longmimi/javascript-30-practice/tree/master/27%20click%20and%20drag)
 28|[1.8 day28 : video speed controller](https://github.com/longmimi/javascript-30-practice/tree/master/28%20video%20speed%20controller)
+29|[1.9 day29 : custom timer](https://github.com/longmimi/javascript-30-practice/tree/master/29%20custom%20timer)
